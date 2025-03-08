@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Github } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -83,6 +84,18 @@ const Contact: React.FC = () => {
                   <p className="mt-1 text-gray-600">Uttar Pradesh, India</p>
                 </div>
               </div>
+              
+              <div className="flex items-start">
+                <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-black text-white">
+                  <Github size={20} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-base font-medium">GitHub</h4>
+                  <a href="https://github.com/Vikas-debugs" target="_blank" rel="noopener noreferrer" className="mt-1 text-gray-600 hover:text-black transition-colors">
+                    github.com/Vikas-debugs
+                  </a>
+                </div>
+              </div>
             </div>
             
             <div className="mt-8">
@@ -111,6 +124,9 @@ const Contact: React.FC = () => {
                     <path d="M16.5 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
                     <path d="M8 12a4 4 0 1 0 8 0 4 4 0 1 0-8 0Z"></path>
                   </svg>
+                </a>
+                <a href="https://github.com/Vikas-debugs" target="_blank" rel="noopener noreferrer" className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 transition-colors hover:bg-black hover:text-white">
+                  <Github size={20} />
                 </a>
               </div>
             </div>

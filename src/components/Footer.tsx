@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -58,6 +59,12 @@ const Footer: React.FC = () => {
                 </svg>
                 <span className="text-gray-400">Uttar Pradesh, India</span>
               </li>
+              <li className="flex items-center">
+                <Github className="h-5 w-5 mr-2 text-gray-400" />
+                <a href="https://github.com/Vikas-debugs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                  github.com/Vikas-debugs
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,6 +76,9 @@ const Footer: React.FC = () => {
             </p>
             
             <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="https://github.com/Vikas-debugs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Github size={20} />
+              </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
