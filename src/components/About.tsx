@@ -39,6 +39,20 @@ const About: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mt-12">
+          <div className="lg:col-span-2 flex flex-col items-center justify-start opacity-0 animate-slide-up" style={{animationDelay: '200ms'}}>
+            <div className="relative w-full max-w-sm overflow-hidden rounded-lg shadow-lg mb-6">
+              <img 
+                src="/lovable-uploads/fd4c043c-9f5b-4d41-8dd6-5705dabceb5b.png" 
+                alt="Vikas Yadav" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold">Vikas Yadav</h3>
+              <p className="text-gray-600">BCA Student</p>
+            </div>
+          </div>
+          
           <div className="lg:col-span-3 opacity-0 animate-slide-up" style={{animationDelay: '200ms'}}>
             <h3 className="text-xl font-semibold mb-4">My Journey</h3>
             <div className="space-y-4 text-gray-600">
@@ -53,20 +67,20 @@ const About: React.FC = () => {
               </p>
             </div>
           </div>
-          
-          <div className="lg:col-span-2 opacity-0 animate-slide-up" style={{animationDelay: '400ms'}}>
-            <h3 className="text-xl font-semibold mb-4">Education</h3>
-            <div className="space-y-6">
-              {educationTimeline.map((item, index) => (
-                <div key={index} className="relative pl-8 border-l border-gray-200">
-                  <span className="absolute left-[-8px] top-1 h-4 w-4 rounded-full bg-white border-2 border-black"></span>
-                  <span className="text-sm font-medium text-gray-500">{item.period}</span>
-                  <h4 className="text-base font-semibold mt-1">{item.degree}</h4>
-                  <p className="text-sm text-gray-600">{item.institution}</p>
-                  <p className="text-sm text-gray-500 mt-1">{item.description}</p>
-                </div>
-              ))}
-            </div>
+        </div>
+        
+        <div className="mt-16 opacity-0 animate-slide-up" style={{animationDelay: '400ms'}}>
+          <h3 className="text-xl font-semibold mb-4">Education</h3>
+          <div className="space-y-6">
+            {educationTimeline.map((item, index) => (
+              <div key={index} className="relative pl-8 border-l border-gray-200">
+                <span className="absolute left-[-8px] top-1 h-4 w-4 rounded-full bg-white border-2 border-black"></span>
+                <span className="text-sm font-medium text-gray-500">{item.period}</span>
+                <h4 className="text-base font-semibold mt-1">{item.degree}</h4>
+                <p className="text-sm text-gray-600">{item.institution}</p>
+                <p className="text-sm text-gray-500 mt-1">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
         

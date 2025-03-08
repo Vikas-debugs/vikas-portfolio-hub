@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const Hero: React.FC = () => {
   return (
@@ -12,6 +13,13 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10 text-center">
+        <div className="mb-6 flex justify-center opacity-0 animate-fade-in">
+          <Avatar className="h-32 w-32 border-4 border-white shadow-lg">
+            <AvatarImage src="/lovable-uploads/fd4c043c-9f5b-4d41-8dd6-5705dabceb5b.png" alt="Vikas Yadav" />
+            <AvatarFallback>VY</AvatarFallback>
+          </Avatar>
+        </div>
+        
         <span className="chip mb-4 opacity-0 animate-fade-in">BCA Student</span>
         
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-4 tracking-tight opacity-0 animate-fade-in" style={{animationDelay: '200ms'}}>
